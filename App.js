@@ -3,7 +3,7 @@ const Topic = require('./models/Subject.js')
 const app = express()
 const mongoose = require('mongoose')
 const { find } = require('./models/Subject.js')
-const mongodb = 'mongodb+srv://utk:utkarsh@utkcluster.fuxh4.mongodb.net/Subject?retryWrites=true&w=majority'
+const mongodb = 'mongodb+srv://<username>passwordh@utkcluster.fuxh4.mongodb.net/Subject?retryWrites=true&w=majority'
 app.set('view engine' , 'ejs');
 app.use(express.urlencoded({extended:true}));
 mongoose.connect(mongodb , {useNewUrlParser:true , useUnifiedTopology:true}).then(()=> { 
